@@ -9,14 +9,110 @@
 </head>
 <body>
     <main>
-        <form class="form" action="https://dev.cotenfrontend.pl">
-            <div class="form__element">
-                <label for="name">Name:</label>
-                <input id="name" type="text" name="name" placeholder="Twoje imie">
-            </div>
+        <h1>Form playground</h1>
+        <form method="POST" class="form" action="https://dev.cotenfrontend.pl">
+            <p>
+                <label for="name">Imie i Nazwisko:</label>
+                <input class="form__input" id="name" type="text" name="name" placeholder="Twoje Imie i Nazwisko" />
+            </p>
+            <fieldset>
+                <legend>Adress</legend>
 
+                <p>
+                    <label>
+                        Ulica:
+                        <input class="form__input" id="streetName" type="text" name="streetName"
+                            placeholder="Nazwa ulicy" />
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Miasto:
+                        <input class="form__input" id="cityName" type="text" name="cityName"
+                            placeholder="Nazwa miasta" />
+                    </label>
+                </p>
+            </fieldset>
 
-            <input type="submit">
+            <fieldset>
+                <legend>Favourite icecream flavour</legend>
+                <p>
+                    <label>
+                        Czekolada
+                        <input name="iceCream" type="radio" value="chocolate">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Cytryna
+                        <input name="iceCream" type="radio" value="lemon">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Truskawka
+                        <input name="iceCream" type="radio" value="strawberry">
+                    </label>
+                </p>
+            </fieldset>
+            <p>
+                <input id="agreement" name="agreement" type="checkbox" value="agreed">
+                <label for="agreement">Zgoda</label>
+            </p>
+            <p>
+                <label>
+                    Ulubiona liczba:
+                    <input class="form__input" id="favouriteNumber" type="number" name="favouriteNumber" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Numer telefonu:
+                    <input class="form__input" id="phoneNumber" type="tel" name="phoneNumber" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    E-mail:
+                    <input class="form__input" id="eMail" type="email" name="eMail" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Range:
+                    <input class="form__input" id="range" type="range" name="range" min="0" max="100" step="10" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Hasło:
+                    <input class="form__input" id="password" type="password" name="password"
+                        placeholder="Wpisz swoje hasło" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Plik:
+                    <input class="form__input" id="avatar" type="file" name="avatar" />
+                </label>
+            </p>
+
+            <p>
+                <label for="band"> Zespół: </label>
+                <select name="band" id="band">
+                    <option value="band-1">Radiohead</option>
+                    <option value="band-2">Metalica</option>
+                    <option value="band-3">Nirvana</option>
+                </select>
+            </p>
+            <p>
+                <label>
+                    Twoja historia:
+                    <textarea class="form__input" id="story" type="textArea" name="story"></textarea>
+                </label>
+            </p>
+
+            <input class="form__submit" type="submit" value="Prześlij" />
         </form>
     </main>
 

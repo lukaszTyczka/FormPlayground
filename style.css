@@ -18,10 +18,22 @@ body {
 }
 
 .form {
-    display: grid;
-    row-gap: 15px;
 }
 
-.form__element {
-    display: grid;
+.form__input {
+    display: block;
+    width: 100%;
+}
+
+.form__submit {
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 800;
+    display: block;
+    margin: 0 auto;
+    color: #081dd6;
+    padding: 10px;
+    box-shadow: 0 0 10px #fff;
 }
